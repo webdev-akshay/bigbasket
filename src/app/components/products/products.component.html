@@ -1,15 +1,14 @@
 <section class="container">
   <div class="row">
-    <div class="col-md-4" *ngFor="let data of productData">
-      <div class="card d-flex">
-        <img src="{{data.productImageUrl}}" class="card-img-top" alt="..." style="height: 250px;">
+    <div class="col-md-4 mb-3" *ngFor="let data of productData">
+      <div class="card d-flex h-100">
+        <img src="{{data.productImageUrl}}" class="card-img-top" alt="Not found" style="height: 250px;">
         <div class="card-body">
           <h5 class="card-title">{{data.productName}}</h5>
           <p class="card-text">
             {{(data.productDescription.length > 100) ? (data.productDescription.substring(0, 100) + '...') :
             data.productDescription}}
           </p>
-
         </div>
       </div>
     </div>
