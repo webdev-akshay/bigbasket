@@ -1,0 +1,15 @@
+<section class="container">
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let offer of offerData">
+      <div class="card">
+        <img src="{{offer.offerImageUrl}}" class="card-img-top" alt="..." style="height: 100px;">
+        <div class="card-body">
+          <h6 class="card-title">{{offer.offerName}}</h6>
+          <p class="card-text">{{offer.offerPercentDiscount}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
