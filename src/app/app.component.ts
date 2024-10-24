@@ -1,17 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProductsComponent } from './components/products/products.component';
-import { OfferComponent } from './components/offer/offer.component';
+import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ProductsComponent,RouterOutlet],
+  imports: [RouterOutlet,TopNavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'bigbasket';
-
-
 }
